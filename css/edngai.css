@@ -114,6 +114,10 @@ nav > ul > li > a {
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 @media (min-width:481px) {
 
+	.hero {
+		background-attachment: scroll;
+	}
+
 
 }
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -126,6 +130,10 @@ nav > ul > li > a {
  }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px) { 
+
+	.hero {
+		background-attachment: fixed;
+	}
 
 
 	.resume-column {
