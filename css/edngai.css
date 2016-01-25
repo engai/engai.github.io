@@ -36,6 +36,8 @@ nav > ul > li > a {
 	text-decoration: none;
 }
 
+
+
 .hero {
 	padding-top: 2%;
 	background: url(../images/hero3.jpg) no-repeat center center scroll;
@@ -43,8 +45,6 @@ nav > ul > li > a {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-transform: translateZ(0x);
-	height: 100%;
 }
 
 .name {
@@ -83,6 +83,16 @@ nav > ul > li > a {
 .resume span {
 	color: #5889b4;
 	font-weight: 700;
+}
+
+.hero{
+     background-attachment: fixed;
+}
+/*only for webkit  browsers*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .hero{ 
+        background-attachment: scroll;
+    }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -140,7 +150,6 @@ background-attachment: scroll;
 
 	.hero {
 		padding-top: 2%;
-		position: static;
 		background: url(../images/hero.jpg) no-repeat center center scroll;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
