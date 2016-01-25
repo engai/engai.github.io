@@ -106,6 +106,10 @@ nav > ul > li > a {
 
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+background-attachment: scroll;
+}
+
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 @media (min-width:481px) {
 
