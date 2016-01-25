@@ -5,10 +5,14 @@ body {
 	font-family: 'Open Sans', sans-serif;
 
 	background: url(../images/hero3.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
 }
 
 .container {
@@ -86,13 +90,6 @@ nav > ul > li > a {
 .resume span {
 	color: #5889b4;
 	font-weight: 700;
-}
-
-/*only for webkit  browsers*/
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    body{ 
-        background-attachment: scroll;
-    }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
