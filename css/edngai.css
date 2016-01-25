@@ -3,6 +3,12 @@ body {
 	padding: 0;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
+
+	background: url(../images/hero3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .container {
@@ -36,16 +42,8 @@ nav > ul > li > a {
 	text-decoration: none;
 }
 
-
-
 .hero {
-	padding-top: 2%;
-	background: url(../images/hero3.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
+	padding-top: 1%;
 }
 
 .name {
@@ -63,6 +61,10 @@ nav > ul > li > a {
 
 .about-text {
 	font-size: 1.5em;
+}
+
+.about {
+	background-color: #fff;
 }
 
 .resume {
@@ -86,16 +88,6 @@ nav > ul > li > a {
 	font-weight: 700;
 }
 
-.hero{
-     background-attachment: fixed;
-}
-/*only for webkit  browsers*/
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    .hero{ 
-        background-attachment: scroll;
-    }
-}
-
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px) {
 
@@ -114,10 +106,6 @@ nav > ul > li > a {
 		width: 100%;
 	}	
 
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-background-attachment: scroll;
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
@@ -149,14 +137,13 @@ background-attachment: scroll;
 	  	background-size: cover;
 	}
 
-	.hero {
+	body {
 		padding-top: 2%;
 		background: url(../images/hero.jpg) no-repeat center center scroll;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-	
 	}
 
 	.about-text {
@@ -173,7 +160,7 @@ background-attachment: scroll;
 		font-size: 2em;
 	}
 
-	.hero{
+	body {
 		background-attachment: fixed;
 	}
 
