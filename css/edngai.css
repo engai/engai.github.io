@@ -39,11 +39,7 @@ body {
 .hero {
 	padding-top: 1%;
 
-	background: url(../images/hero3.jpg) no-repeat center center scroll;
-	-webkit-background-size: 100% 100%; 
-    -moz-background-size: 100% 100%; 
-    -o-background-size: 100% 100%; 
-    background-size: 100% 100%; 
+	background: url(../images/hero3.jpg) no-repeat center center scroll; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
