@@ -3,16 +3,6 @@ body {
 	padding: 0;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
-
-	background: url(../images/hero3.jpg) no-repeat center center fixed;
-	-webkit-background-size: 100% 100%; 
-    -moz-background-size: 100% 100%; 
-    -o-background-size: 100% 100%; 
-    background-size: 100% 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover; 
 }
 
 .container {
@@ -48,6 +38,16 @@ nav > ul > li > a {
 
 .hero {
 	padding-top: 1%;
+
+	background: url(../images/hero3.jpg) no-repeat center center scroll;
+	-webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
 }
 
 .name {
@@ -141,7 +141,7 @@ nav > ul > li > a {
 	  	background-size: cover;
 	}
 
-	body {
+	.hero {
 		padding-top: 2%;
 		background: url(../images/hero.jpg) no-repeat center center scroll;
 		-webkit-background-size: cover;
@@ -164,7 +164,7 @@ nav > ul > li > a {
 		font-size: 2em;
 	}
 
-	body {
+	.hero {
 		background-attachment: fixed;
 	}
 
