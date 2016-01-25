@@ -41,12 +41,11 @@ nav > ul > li > a {
 .hero {
 	padding-top: 2%;
 
-	background: url(../images/hero.jpg) no-repeat center center scroll;
+	background: url(../images/hero3.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
 }
 
 .name {
@@ -152,7 +151,6 @@ nav > ul > li > a {
 		text-align: left;
 		width: 40%;
 	}	
-
 
 }
 
