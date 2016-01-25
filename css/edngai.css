@@ -38,17 +38,6 @@ nav > ul > li > a {
 	text-decoration: none;
 }
 
-.hero {
-	padding-top: 2%;
-
-	background: url(../images/hero.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-
 .name {
 	padding-top: 2%;
 	color: #fff;
@@ -111,7 +100,14 @@ nav > ul > li > a {
 @media (min-width:481px) {
 
 	.hero {
-		background-attachment: scroll;
+	padding-top: 2%;
+
+	background: url(../images/hero.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
 	}
 
 
