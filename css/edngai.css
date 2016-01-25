@@ -42,7 +42,7 @@ nav > ul > li > a {
 	height: 100vh;
 	padding-top: 2%;
 
-	background: url(../images/hero.jpg) no-repeat center center fixed;
+	background: url(../images/hero.jpg) no-repeat center center scroll;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
@@ -131,11 +131,6 @@ nav > ul > li > a {
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px) { 
 
-	.hero {
-		background-attachment: fixed;
-	}
-
-
 	.resume-column {
 		display: inline-block;
 		text-align: left;
@@ -143,7 +138,7 @@ nav > ul > li > a {
 	}
 
 	.about {
-		background: url("../images/charactershadow.jpg") no-repeat center center fixed;
+		background: url("../images/charactershadow.jpg") no-repeat center center scroll;
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
