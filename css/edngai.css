@@ -9,29 +9,29 @@ body {
 	padding: 5% 10% 5% 10%;
 }
 
-nav {
+.nav {
 	padding-top: 30px
 	overflow: hidden;
 	text-align: right;
 }
 
-nav img {
+.nav img {
 	padding-left: 5%;
 	width: 55px;
 	float:left;
 }
 
-nav ul {
+.nav ul {
 	padding-right: 5%;
 	list-style-type: none;
 }
 
-nav ul li {
+.nav ul li {
 	display: inline-block;
 	margin: 0 1% 0 1%;
 }
 
-nav > ul > li > a {
+.nav > ul > li > a {
 	color: #fff;
 	text-decoration: none;
 }
@@ -39,7 +39,7 @@ nav > ul > li > a {
 .hero {
 	padding-top: 1%;
 
-	background: url(../images/charactershadow.jpg) no-repeat center center scroll;
+	background: url(../images/hero3.jpg) no-repeat center center scroll;
 	-webkit-background-size: 100% 100%; 
     -moz-background-size: 100% 100%; 
     -o-background-size: 100% 100%; 
