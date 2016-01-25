@@ -40,8 +40,8 @@ nav > ul > li > a {
 
 .hero {
 	padding-top: 2%;
-
-	background: url(../images/hero3.jpg) no-repeat center center fixed;
+	position: static;
+	background: url(../images/hero3.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -109,18 +109,6 @@ nav > ul > li > a {
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 @media (min-width:481px) {
 
-	.hero {
-	padding-top: 2%;
-
-	background: url(../images/hero.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	
-	}
-
-
 }
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px) { 
@@ -145,6 +133,17 @@ nav > ul > li > a {
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
 	  	background-size: cover;
+	}
+
+	.hero {
+		padding-top: 2%;
+		position: static;
+		background: url(../images/hero.jpg) no-repeat center center scroll;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	
 	}
 
 	.about-text {
