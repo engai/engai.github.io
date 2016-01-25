@@ -5,6 +5,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	height: 100%;
 	overflow: auto;
+		position: static;
 }
 
 .container {
@@ -40,7 +41,6 @@ nav > ul > li > a {
 
 .hero {
 	padding-top: 2%;
-	position: static;
 	background: url(../images/hero3.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
