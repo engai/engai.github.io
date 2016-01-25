@@ -43,8 +43,8 @@ nav > ul > li > a {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	-webkit-transform: translateZ(0x)
 	height: 100%;
-	overflow: hidden;
 }
 
 .name {
@@ -161,6 +161,14 @@ background-attachment: scroll;
 
 	.name {
 		font-size: 2em;
+	}
+
+	.hero{
+		background-attachment: fixed;
+	}
+
+	.about {
+		background-attachment: fixed;
 	}
 
 
