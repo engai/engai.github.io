@@ -9,6 +9,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
 
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="scroll.js"></script>
+
 	<title>Ed Ngai</title>
 	<link rel="stylesheet" type="text/css" href="css/edngai.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -21,10 +34,10 @@
 		<div class="nav">
 			<img src="images/logowhite.png">
 			<ul>
-				<li><a href="/html/">About</a></li>
-				<li><a href="/css/">Work</a></li>
-				<li><a href="/js/">Contact</a></li>
-				<li><a href="/jquery/">Blog</a></li>
+				<li><a href="#about" class="scroll">About</a></li>
+				<li><a href="#projects" class="scroll">Projects</a></li>
+				<li><a href="#contact" class="scroll">Contact</a></li>
+				<li><a href="http://www.edngai.com/blog/">Blog</a></li>
 			</ul>
 		</div>
 
@@ -39,45 +52,189 @@
 		</div>
 	</div>
 
-	<div class="about">
+	<section id="about">
 		<div class="container">
-			<div class="about-text">
-				Nice to meet you! I am a 3rd year Computer Science student at UC San Diego,
-				interested in front-end development as well as UX/UI Design. With skills
-				in both fields, my passion lies in the process of creating the perfect user
-				experience from design to implementation. With each project, I aspire to
-				deliver beautiful and intutive applications that users will love.
+			<div class="row">
+				<div class="about-text col-md-5 text-center">
+					Nice to meet you! I am a 3rd year Computer Science student at UC San Diego,
+					interested in front-end development as well as UX/UI Design. With skills
+					in both fields, my passion lies in the process of creating the perfect user
+					experience from design to implementation. With each project, I aspire to
+					deliver beautiful and intutive applications that users will love.
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="resume">
+	<section id="resume">
 		<div class="container">
-			<div class="resume-column">
-				<img src="images/education.png"/ >
-				<h3>Education</h3>
-				UC San Diego</br>
-				<span>GPA:</span> 3.33</br>
-				<span>Major:</span> B.S. Computer Science (2017)</br>
-				<span>Minor:</span> Entrepreneurship & Innovation</br>
+			<div class="row">
+				<div class="resume-column col-sm-4 text-center">
+					<img src="images/education.png"/ >
+					<h3>Education</h3>
+					UC San Diego</br>
+					<p><span class="resume-blue">GPA:</span> 3.33</br>
+						<span class="resume-blue">Major:</span> B.S. Computer Science (2017)</br>
+						<span class="resume-blue">Minor:</span> Entrepreneurship & Innovation</br>
+					</div>
+
+					<div class="resume-column col-sm-4 text-center">
+						<img src="images/skills.png"/ >
+						<h3>Skills</h3>
+						<span class="resume-blue">Coding:</span> Java, C++, JS, HTML/CSS, Swift</br>
+						<span class="resume-blue">Tools:</span> Vim, Eclipse, JQuery, Xcode, Android Studio</br>
+						<span class="resume-blue">Design:</span> Adobe PS, Adobe AI, Invision, Axure</br>
+
+					</div>
+
+					<div class="resume-column col-sm-4 text-center">
+						<img src="images/experience.png"/ >
+						<h3>Experience</h3>
+						<span class="resume-blue">Digium:</span> UI Designer (Contract)</br>
+						<span class="resume-blue">UCSD Cognitive Science:</span> Instructional Assistant</br>
+						<span class="resume-blue">UCSD Alumni:</span> Web Developer</br>
+					</div>
+				</div>
 			</div>
 
-			<div class="resume-column">
-				<img src="images/skills.png"/ >
-				<h3>Skills</h3>
-				<span>Coding:</span> Java, C++, JS, HTML/CSS, Swift</br>
-				<span>Tools:</span> Vim, Eclipse, JQuery, Xcode, Android Studio</br>
-				<span>Design:</span> Adobe PS, Adobe AI, Invision</br>
-			</div>
+			<a href="Resume2016.pdf">
+				<div class="resume-button text-center">View Full Resume</div>
+			</a>
+		</section>
 
-			<div class="resume-column">
-				<img src="images/experience.png"/ >
-				<h3>Experience</h3>
-				<span>UCSD COGS:</span> Undergraduate TA (187A - Usability & Info Architecture)</br>
-				<span>UCSD Alumni:</span> Web Developer & Marketing Assistant</br>
-			</div>
-		</div>
-	</div>
+		<section id="projects">
 
-</body>
-</html>
+			<h1>Projects</h1>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="project">
+							<img class="img-responsive" src="images/duet.png" />
+
+							<div class="project-description">
+								<strong>UX/UI Design + iOS Development</strong>
+								<br/><br/>
+								<p><strong>Duet</strong> is an event-first
+									matchmaking iOS app that revolutionizes the way we meet new people.
+									By leveraging common music tastes and interests in local events,
+									Duet provides a beautiful and intuitive way for users to develop
+									strong and long-lasting connections.<br/><br/>
+									Duet was designed along with 5 others in a UX course at UC San Diego.
+									Through user research, we were able to derive a common problem
+									amongst college-aged students: <i>Wanting to go to a concert by having
+										no one to go with.</i> After ideation, we created various
+										personas, storyboards, and prototypes to design and develop
+										the perfect solution.
+									</p>
+									<a href="http://www.edngai.com/blog/2016/02/19/duet/">
+										<div class="project-button">
+											Design Process
+										</div>
+									</a>
+									<a href="https://github.com/engai/duet">
+										<div class="project-button">
+											GitHub
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-10 col-sm-offset-1">
+							<div class="project">
+								<img class="img-responsive" src="images/FitKit.png" />
+								<div class="project-description">
+									<strong>UI Design + Android Developement + Agile </strong>
+									<br/><br/>
+									<p><strong>FitKit</strong> is an all-in-one health
+										application developed for the Android platform. By keeping
+										track of a basic health profile, BMI, and weekly
+										calories, it aims to pride tips to guide users towards a
+										healthier lifestyle.<br/><br/>
+										The application was developed using Java in Android Studio and
+										utilizes Parse as a backend for handling user information.
+										Using Agile methodology, our team of 5 implemented FitKit with weekly
+										iterations involving gathering requirements, designing, coding,
+										and testing. Through weekly interations and stand-up meetings,
+										our team was able to successfully complete key user stories and
+										deliver a functional product to the customer</p>
+										<a href="https://github.com/engai/FitKit">
+											<div class="project-button">
+												GitHub
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-sm-5 col-sm-offset-1">
+								<div class="project">
+									<img class="img-responsive" src="images/AllCityAd.png" />
+									<div class="project-description">
+										<strong>HTML/CSS</strong>
+										<br/><br/>
+										<p><strong>All City Printing</strong> is a
+											 single-page vertical scroll website developed for a
+											 commercial printing company in San Francisco.</p>
+											<a href="www.allcityprinting.com">
+												<div class="project-button">
+													Visit Site
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-5">
+									<div class="project">
+										<img class="img-responsive" src="images/5kAd.png" />
+										<div class="project-description" style="border-top: 2px solid black">
+											<strong>HTML/CSS</strong>
+											<br/><br/>
+											<p><strong>All City Printing</strong> is a
+												 single-page vertical scroll website developed for a
+												 commercial printing company in San Francisco.</p>
+												<a href="www.allcityprinting.com">
+													<div class="project-button">
+														Visit Site
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+						</div>
+
+
+					</div>
+				</section>
+
+				<section id="contact">
+					<h1>Contact</h1>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-2 col-xs-offset-3 text-center">
+								<a href="www.linkedin.com"><img class="img-responsive" src="images/linkedin.png" /></a>
+							</div>
+							<div class="col-xs-2 text-center">
+								<a href="www.linkedin.com"><img class="img-responsive" src="images/mail.png" /></a>
+							</div>
+							<div class="col-xs-2 text-center">
+								<a href="www.linkedin.com"><img class="img-responsive" src="images/github.png" /></a>
+							</div>
+						</div>
+					</div>
+					<div class="contact-text">
+						engai@ucsd.edu<br/>
+						&copy; Ed Ngai 2016
+					</div>
+				</section>
+
+			</body>
+			</html>
