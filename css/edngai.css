@@ -70,7 +70,20 @@ body {
 	padding: 3%;
 }
 
-#resume {
+#experience {
+	padding: 3%;
+}
+
+.exp-row {
+	display: flex;
+    align-items: center;
+}
+
+.exp-column img{
+	height: auto;
+}
+
+#resume{
 	text-align: left;
 	background-color: #fff;
 	padding: 3%;
