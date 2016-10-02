@@ -33,7 +33,9 @@ body {
 	text-decoration: none;
 }
 
-
+ul.menu li.hamburger {
+	display: none;
+}
 
 .hero {
 	height: 100vh;
@@ -237,7 +239,29 @@ a:hover, a:visited, a:active, a:link {
 	.resume-column {
 		text-align: left;
 	}
+}
 
+@media screen and (max-width:680px) {
+	ul.menu li {display: none;}
+	ul.menu li.hamburger {
+		float: right;
+		display: inline-block;
+	}
+
+	ul.menu.responsive {position: relative;}
+  ul.menu.responsive li.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.menu.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.menu.responsive li a {
+    display: block;
+    text-align: right;
+  }
 }
 /* MEDIUM tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:992px) {

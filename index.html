@@ -29,10 +29,19 @@
 	<script>
 	  $(function(){
 	      $(".hero-title").typed({
-	        strings: ["^1000Front-End Developer^2000", "^1000UX/UI Designer^2000"],
+	        strings: ["^1000Front-End Developer^2000", "^1000UX Designer^2000"],
 	        typeSpeed: 0
 	      });
 	  });
+
+		function toggleMenu() {
+	    var x = document.getElementById("myMenu");
+	    if (x.className === "menu") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "menu";
+	    }
+		};
 	</script>
 
 	<title>Ed Ngai</title>
@@ -58,11 +67,14 @@
 		<div class="nav">
 
 			<img src="images/logowhite.png">
-			<ul>
+			<ul class="menu" id="myMenu">
 				<li><a href="#about" class="scroll">About</a></li>
 				<li><a href="#projects" class="scroll">Projects</a></li>
 				<li><a href="#contact" class="scroll">Contact</a></li>
 				<li><a href="https://medium.com/@engai" target="_blank">Blog</a></li>
+				<li class="hamburger">
+    			<a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a>
+  			</li>
 			</ul>
 
 		</div>
