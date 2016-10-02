@@ -25,6 +25,16 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+	<script src="typed.js"></script>
+	<script>
+	  $(function(){
+	      $(".hero-title").typed({
+	        strings: ["^1000Front-End Developer^2000", "^1000UX/UI Designer^2000"],
+	        typeSpeed: 0
+	      });
+	  });
+	</script>
+
 	<title>Ed Ngai</title>
 	<link rel="stylesheet" type="text/css" href="css/edngai.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -52,7 +62,7 @@
 				<li><a href="#about" class="scroll">About</a></li>
 				<li><a href="#projects" class="scroll">Projects</a></li>
 				<li><a href="#contact" class="scroll">Contact</a></li>
-				<li><a href="https://medium.com/@engai">Blog</a></li>
+				<li><a href="https://medium.com/@engai" target="_blank">Blog</a></li>
 			</ul>
 
 		</div>
@@ -61,10 +71,7 @@
 			<h1>
 				Hello, my name is Ed!</br>
 			</h1>
-			<h2>
-				Front-End Developer &amp</br>
-				UX / UI Designer
-			</h2>
+			<h2><span class="hero-title"></span></h2>
 		</div>
 	</div>
 
