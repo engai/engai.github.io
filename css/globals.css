@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+body {
+  font-family: 'Rubik', sans-serif; }
+
+body {
+  background: url(../images/confetti.png) no-repeat bottom center fixed #FFFEFA;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+a {
+  text-decoration: underline;
+  color: #FF4B53; }
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: #FF4B53; }
+
+/* mouse over link */
+a:hover {
+  opacity: 0.7;
+  color: #FF4B53; }
+
+a:active {
+  text-decoration: none;
+  color: #FF4B53; }
+
+#spacer {
+  width: 100px;
+  height: 5px;
+  background-color: #FF4B53;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+#description {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  line-height: 1.5; }
+
+.socials .button {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+  opacity: 1.0; }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #description {
+    margin-top: 20px;
+    margin-bottom: 40px; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    background: url(../images/phone-confetti.png) no-repeat center center fixed #FFFEFA;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
+/* Extra Small Devices, Phones */
+
+/*# sourceMappingURL=globals.css.map */
