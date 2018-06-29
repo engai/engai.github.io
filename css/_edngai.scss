@@ -2,35 +2,37 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
 }
 
 .nav {
-	padding-top: 30px;
+
+  padding-top: 30px;
 	overflow: hidden;
-	text-align: right;
-}
+  text-align: right;
+  
+	img {
+		margin-left: 5%;
+		width: 55px;
+		float:left;
+  }
+  
+  ul {
+    padding-right: 5%;
+    list-style-type: none;
 
-.nav img {
-	margin-left: 5%;
-	width: 55px;
-	float:left;
-}
+    li {
+      display: inline-block;
+      margin: 0 1% 0 1%;
+      top:0;
+    }
+  }
 
-.nav ul {
-	padding-right: 5%;
-	list-style-type: none;
-}
-
-.nav ul li {
-	display: inline-block;
-	margin: 0 1% 0 1%;
-	top:0;
-}
-
-.nav > ul > li > a {
-	color: #fff;
-	text-decoration: none;
+  > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 ul.menu li.hamburger {
@@ -41,26 +43,26 @@ ul.menu li.hamburger {
 	height: 100vh;
 	padding-top: 1%;
 	background: url(../images/hero-mobile.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.name{
+.name {
 	padding-top: 10px;
 	color: #fff;
 	text-align: center;
-	height: 100vh;
-}
+  height: 100vh;
+  
+  h1 {
+    font-size: 2em;
+    font-weight: 700;
+  }
 
-.name h1{
-	font-size: 2em;
-	font-weight: 700;
-}
-
-.name h2{
-	font-size: 1.2em;
+  h2 {
+    font-size: 1.2em;
+  }
 }
 
 .about-text {
@@ -68,61 +70,14 @@ ul.menu li.hamburger {
 }
 
 #about {
+  padding: 3%;
+  
+  p {
+    margin-bottom: 24px;
+  }
+} 
 
-	padding: 3%;
-}
-
-#experience {
-	padding: 3%;
-}
-
-.exp-row {
-	display: flex;
-    align-items: center;
-}
-
-.exp-column img{
-	height: auto;
-}
-
-#resume{
-	text-align: left;
-	background-color: #fff;
-	padding: 3%;
-}
-
-.resume-column{
-	padding: 3%;
-}
-
-.resume-column img {
-	width: 128px;
-	text-indent: 10px;
-}
-
-.resume-blue {
-	color: #5889b4;
-	font-weight: 700;
-}
-
-.resume-button{
-	font-size: 1.17em;
-	width: 250px;
-	margin: 0 auto;
-	border: 2px solid #000;
-	padding: 10px 20px 10px 20px;
-	margin-top: 2%;
-	margin-bottom: 2%;
-
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	/* ...and now for the proper property */
-	transition:.5s;
-}
-
-a{
+a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -134,68 +89,78 @@ a:hover, a:visited, a:active, a:link {
 
 
 #projects{
-	padding: 3%;
-	background-color: #efefef;
+  padding: 0 3%;
+
+  .projects__grid{
+    display: flex;
+    margin: 0 -2.5rem;
+    flex-wrap: wrap;
+
+    .project {
+      height: 340px;
+    }
+
+    .projects__col {
+      flex: 1 1 0;
+      padding: 0 1rem;
+    }
+  }
 }
 
-#projects h1 ,#contact h1{
-	text-align: center;
-	padding-bottom: 3%;
+#about h1, #projects h1 ,#contact h1{
+  margin-bottom: 3%;
+  border-bottom: 3px solid currentColor;
+  padding-bottom: 10px;
+  width: 20%;
 }
 
 .project {
-	-moz-box-shadow: 0 0 20px 1px #888;
-	-webkit-box-shadow: 0 0 20px 1px#888;
-	box-shadow: 0 0 20px 1px #888;
-	margin-bottom: 5%;
-}
+  box-shadow: 5px 10px 20px #E1E1E1;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  padding: 1.25rem;
+  height: 560px;
+  width: 100%;
+  transition: transform 0.75s ease-out, box-shadow 0.75s ease-out;
+  
+  &__role {
+    margin: 0 0 0.75rem;
+  }
 
-.project-description{
-	text-align: center;
-	padding: 2% 5% 2% 5%;
-	background-color: #ffffff;
-}
+  &__title {
+    margin: 0;
+    font-weight: bold;
+  }
 
-.project-description p{
-	text-align: left;
-}
+  &.project__slds {
+    background: linear-gradient(rgba(255, 255, 255, 0.90) 20%, rgba(255, 255, 255, 0)), url(../images/slds.png) no-repeat center center;
+    background-size: cover;
+  }
 
-.project-description strong{
-	font-size: 18px;
-}
+  &.project__duet {
+    background: linear-gradient(rgba(255, 255, 255, 0.90) 20%, rgba(255, 255, 255, 0)), url(../images/duet.png) no-repeat center center;
+    background-size: cover;
+  }
 
-.project-button{
-	margin: 0 auto;
-	font-size: 1.17em;
-	width: 250px;
-	border: 2px solid #000;
-	padding: 10px 20px 10px 20px;
-	display: inline-block;
-	margin: 2% 1% 2% 1%;
-	-o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  /* ...and now for the proper property */
-  transition:.5s;
-}
-
-.resume-button:hover, .project-button:hover{
-	cursor: pointer;
-	background-color: #5b7081;
-	color: #fff;
-	border: 2px solid white;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 20px #F3f2f2;
+  }
 }
 
 #contact{
-	text-align: center;
 	padding: 3%;
-	margin: 0 auto;
+  margin: 0 auto;
+  
+  .row {
+    div {
+      display: inline-block;
+    }
+  }
 }
 
 #contact img{
-	text-align: center;
-  width: 150px;
+  width: 50px;
 	border-radius: 50%;
 }
 
@@ -204,6 +169,8 @@ a:hover, a:visited, a:active, a:link {
 }
 
 .contact-text{
+  text-align: center;
+  width: 100%;
 	padding-top: 2%;
 }
 
@@ -213,7 +180,7 @@ a:hover, a:visited, a:active, a:link {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
+@keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -271,11 +238,11 @@ a:hover, a:visited, a:active, a:link {
 	}
 
 	#about {
-		background: url("../images/charactershadow.jpg") no-repeat center center scroll;
+		//background: url("../images/charactershadow.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	}
 
 	.about-text{
@@ -314,13 +281,10 @@ a:hover, a:visited, a:active, a:link {
 
 	#about {
 		background-attachment: fixed;
-			background: url("../images/charactershadow2.jpg") no-repeat center center fixed;
+			//background: url("../images/charactershadow2.jpg") no-repeat center center fixed;
 			-webkit-background-size: cover;
 		  	-moz-background-size: cover;
 		  	-o-background-size: cover;
 		  	background-size: cover;
 	}
-
-
-
  }

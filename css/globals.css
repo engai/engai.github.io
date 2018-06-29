@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 body {
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Nunito', sans-serif; }
 
 body {
   background: url(../images/confetti.png) no-repeat bottom center fixed #FFFEFA;

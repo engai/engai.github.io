@@ -1,0 +1,68 @@
+.case-study {
+  margin-left: 20%;
+  margin-right: 20%;
+
+  &__nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 25px;
+
+    .back-button {
+
+      transition: transform 1s ease-out;
+
+      &:hover {
+        transform: translate(-5px);
+      }
+    
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__hero {
+
+    img {
+      border-radius: 12px;
+      width: 100%;
+    }
+  }
+
+  &__body {
+    margin-top: 32px;
+
+    a {
+      &:hover, &:focus {
+        color: #0070d2;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      margin: 32px 0;
+    }
+
+    h2 {
+      border-bottom: 3px solid currentColor;
+      padding-bottom: 10px;
+      width: 50%;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    img {
+      border-radius: 12px;
+      width: 100%;
+    }
+  }
+}
